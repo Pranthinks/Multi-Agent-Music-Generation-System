@@ -1,0 +1,65 @@
+{
+  "customers": {
+    "John Doe": {
+      "status": "active",
+      "payments": [
+        {
+          "amount": 1.0,
+          "payment_id": "PAY_20251019174222",
+          "timestamp": "2025-10-19 17:42:22"
+        },
+        {
+          "amount": 1.0,
+          "payment_id": "PAY_20251019174753",
+          "timestamp": "2025-10-19 17:47:53"
+        }
+      ],
+      "created_at": "2025-10-19 16:45:35",
+      "last_payment": "2025-10-22 12:50:47"
+    },
+    "Alen": {
+      "status": "active",
+      "payments": [
+        {
+          "amount": 1.0,
+          "payment_id": "PAY_20251019174332",
+          "timestamp": "2025-10-19 17:43:22"
+        },
+        {
+          "amount": 1.0,
+          "payment_id": "PAY_20251019174755",
+          "timestamp": "2025-10-19 17:47:55"
+        },
+        {
+          "amount": 1.0,
+          "payment_id": "PAY_20251019230741",
+          "timestamp": "2025-10-19 23:07:41"
+        }
+      ],
+      "created_at": "2025-10-19 16:45:35",
+      "last_payment": "2025-10-22 12:50:48"
+    },
+    "Praneeth": {
+      "status": "active",
+      "payments": [
+        {
+          "amount": 1.0,
+          "payment_id": "PAY_20251021180330",
+          "timestamp": "2025-10-21 18:03:30"
+        },
+        {
+          "amount": 1.0,
+          "payment_id": "PAY_20251021182520",
+          "timestamp": "2025-10-21 18:25:20"
+        },
+        {
+          "amount": 1.0,
+          "payment_id": "PAY_20251022124156",
+          "timestamp": "2025-10-22 12:41:56"
+        }
+      ],
+      "created_at": "2025-10-21 18:03:30",
+      "last_payment": "2025-10-22 12:51:51"
+    }
+  }
+}
