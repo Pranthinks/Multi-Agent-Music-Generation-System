@@ -43,7 +43,7 @@ The system runs three specialized AI agents:
    - Finds latest generated music
    - Creates 30-second preview samples
    - Posts to social media platforms with engaging captions
-   - *Note: Currently simulated - real social media APIs can be integrated*
+   - *Note: Currently simulated(Just Kept the Print Statements) - real social media APIs can be integrated*
 
 ## Setup
 
