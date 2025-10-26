@@ -30,6 +30,8 @@ def daily_music_generation():
             "input": "Generate an upbeat, energetic track about winning today"
         })
         print(f"\nResult: {result['output']}")
+
+        daily_marketing()
     except Exception as e:
         print(f"Error: {e}")
     
@@ -74,22 +76,20 @@ def monthly_billing():
         print(f"Error: {e}")
     
     print(f"{'='*70}\n")
+def monthly_billing_runner():
+    if datetime.now().day == 1:   # run only on 1st of month
+        monthly_billing()
 
 # Schedule tasks
-#schedule.every(15).seconds.do(daily_music_generation)
-schedule.every(15).seconds.do(daily_marketing)
-#schedule.every(10).seconds.do(monthly_billing)
+schedule.every().day.at("09:00").do(daily_music_generation)  
+schedule.every().day.at("00:10").do(monthly_billing_runner)
 
 print("\nSCHEDULER STARTED")
 print("="*70)
 print("Schedule:")
-print("   - Music Generation: Every 15 seconds")
-print("   - Marketing: Every 25 seconds")
-print("   - Billing: Every 35 seconds")
-print("="*70)
-print(f"Started at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-print("Press Ctrl+C to stop")
-print("="*70)
+print("Schedule:")
+print("   - Music Generation: Every day at 09:00 AM (Marketing runs after Music)")
+print("   - Billing: Runs monthly on the 1st at 00:10 AM")
 
 # Run scheduler
 try:
